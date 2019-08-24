@@ -1,0 +1,27 @@
+{
+  "name": "php-circle/middleware-dispatcher",
+  "type" : "tool",
+  "description": "PSR-15 compliant Middleware dispatcher",
+  "keywords": ["middleware", "dispatcher"],
+  "license": "MIT",
+  "require" : {
+    "php": ">=7.2",
+    "psr/http-server-handler": "^1.0",
+    "psr/http-server-middleware": "^1.0",
+    "mockery/mockery": "^1.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.2",
+    "infection/infection": "^0.13.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "PhpCircle\\Middleware\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\Middleware\\": "tests/"
+    }
+  }
+}
